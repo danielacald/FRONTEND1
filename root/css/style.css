@@ -1,0 +1,567 @@
+/*css petshop*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  --main-color: #f0a83e;
+  --bottom-color: #222222;
+  --second-color: #3c2313;
+  --buttom-1: #786960;
+  --buttom-color: #8a8787;
+  --font-2-color: #a0a0a0;
+  --cards-color: #fbfaf6;
+  --font-1-color: #ffffff;
+}
+
+/* Estido del top */
+
+.top {
+  display: none;
+}
+
+/* Estilos del header */
+
+.nav-menu {
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  height: 54px;
+  width: 100vw;
+  padding: 0 40px;
+}
+
+/* Estilos de la barra de navegación */
+
+.lista-navegación {
+  background-color: var(--main-color);
+  flex-direction: column;
+  align-self: flex-start;
+  font-size: 13px;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  margin-top: 54px;
+  width: 150px;
+  height: 130px;
+  color: var(--font-1-color);
+  left: -200px;
+}
+
+.lista-navegación li {
+  padding: 8px;
+
+}
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  color: var(--font-1-color);
+  font-size: 25px;
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+}
+
+#check:checked ~ .lista-navegación {
+  left: auto;
+}
+
+#check:checked ~ .checkbtn {
+  color: var(--second-color);
+}
+
+/* Estilos de la cabecera de la seccion principal */
+
+.main-header {
+  background-image: url(../img/Fondoprincipal.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 440px;
+  width: 100vw;
+}
+
+.main-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text h3 {
+  background-color: var(--font-1-color);
+  width: 365px;
+  height: 54px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.main-text p {
+  color: var(--second-color);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  margin: 12px 0;
+}
+
+.main-buttom {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--font-1-color);
+  width: 141px;
+  height: 49px;
+  font-size: 16px;
+  font-weight: 400;
+  align-self: flex-end;
+}
+
+/* Estilos de la sección principal */
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.paw-gde {
+  color: var(--main-color);
+  margin: 23px auto 9px;
+}
+
+.main-section h2 {
+  color: var(--second-color);
+  font-size: 40px;
+  font-weight: 700;
+  width: 213px;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+}
+
+.products li {
+  color: var(--buttom-color);
+  padding: 10px;
+}
+
+/*...*/
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: var(--cards-color);
+  color: var(--second-color);
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 7px;
+  line-height: 15px;
+}
+
+.price {
+  color: var(--main-color);
+  padding-top: 5px;
+}
+
+/* Form section */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  color: var(--second-color);
+  font-size: 40px;
+  font-weight: 700px;
+  margin-bottom: 11px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-form {
+  background-color: var(--second-color);
+  width: 298px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.input-form::placeholder {
+  color: var(--font-1-color);
+  font-size: 9px;
+  font-weight: 400;
+  padding-left: 6px;
+}
+
+.btn {
+  width: 199px;
+  height: 45px;
+  color: var(--font-1-color);
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 25px;
+  margin-top: 48px;
+}
+
+.reset {
+  background-color: var(--buttom-color);
+}
+
+.submit {
+  background-color: var(--main-color);
+}
+
+/* seccion de suscripción */
+
+.subsc {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 101px;
+  margin-top: 45px;
+}
+
+.img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--font-1-color);
+  font-size: 20px;
+  font-weight: 700;
+  width: 100vw;
+  margin-left: 10px;
+}
+
+.img p {
+  text-align: center;
+}
+
+.sub-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.buttom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.email-2 {
+  background-color: var(--font-1-color);
+  width: 250px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+}
+
+.email-2::placeholder {
+  color: var(--font-2-color);
+  font-size: 10px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+
+.submit-2 {
+  background-color: var(--second-color);
+  color: var(--font-1-color);
+  font-size: 15px;
+  font-weight: 700;
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  border: none;
+  padding: 9px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--second-color);
+  color: var(--font-1-color);
+}
+
+.foot-logo {
+  margin: 9px auto 15px;
+}
+
+.datos {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.foot-img {
+  /* centra el icono en el div*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--buttom-color);
+  border: solid 8px var(--buttom-1);
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+}
+
+.foot-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.foot-data {
+  margin-left: 25px;
+  color: var(--font-1-color);
+}
+
+.foot-data h3 {
+  background-color: var(--second-color);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.foot-data p {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--font-2-color);
+  margin-top: 0;
+}
+
+.footer-btn {
+  background-color: var(--bottom-color);
+  color: var(--font-1-color);
+  font-size: 10px;
+  font-weight: 700;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive for Desktop */
+
+@media (min-width: 760px) {
+  .top {
+    display: block;
+    background-color: var(--bottom-color);
+    height: 20px;
+    width: 100vw;
+    color: var(--font-1-color);
+    font-size: 10px;
+    font-weight: 400;
+    align-items: center;
+  }
+
+  ul.list-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 0 90px;
+  }
+
+  ul.list-2 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  select.estilo-1 {
+    background-color: var(--second-color);
+    color: var(--font-1-color);
+    border: none;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  li {
+    padding: 5px;
+  }
+
+  /* Header styles */
+
+  .checkbtn {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    width: 100vw;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+  }
+
+  .lista-navegación {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 40%;
+    padding: 0;
+  }
+
+  .paw {
+    padding: 5px;
+  }
+
+  .main-text {
+    position: absolute;
+    top: 156px;
+    right: 11px;
+    width: 365px;
+    height: 146px;
+    text-align: center;
+  }
+
+  .main-text h3 {
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 8px;
+  }
+
+  .main-text p {
+    text-align: center;
+  }
+
+  .main-buttom {
+    align-self: center;
+  }
+
+  .main-section h2 {
+    width: 100vw;
+  }
+
+  /* Cards */
+
+  .cards-section {
+    flex-direction: row;
+  }
+
+  .card {
+    text-align: center;
+    font-size: 15px;
+    width: 265px;
+    margin: 25px 10px;
+  }
+
+  /* Form section */
+
+  .form-title {
+    font-size: 25px;
+    margin-bottom: 11px;
+  }
+
+  .contact-form {
+    align-items: center;
+  }
+
+  .input-form {
+    width: 340px;
+  }
+
+  .btn {
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    margin: 40px 6px;
+  }
+
+  /* Subscription styles */
+
+  .subsc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  .img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .img p {
+    padding: 10px;
+  }
+
+  .subs-form {
+    display: flex;
+    align-items: center;
+    margin: 10px 47px;
+  }
+
+  .email-2 {
+    width: 271px;
+    font-size: 12px;
+  }
+
+  .email-2::placeholder {
+    font-size: 9px;
+  }
+
+  .submit-2 {
+    font-size: 9px;
+    width: 70px;
+    margin-left: 5px;
+  }
+
+/* estilos del footer */
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+  .footer {
+    margin-top: 23px;
+    margin-left: 70px;
+  }
+
+  .foot-logo {
+    position: relative;
+    right: 70px;
+    top: 50%;
+  }
+}
